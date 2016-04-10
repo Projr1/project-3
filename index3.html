@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Hyderabad Tourism</title>
+<style>
+
+body{
+       background-size:cover;
+      background-image: url("images/i_love_hyderabad_rectangle_magnet.jpg ");
+      font-family: sans-serif;
+            font-size: 1.2em;
+        }
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+.show2 {display:block;}
+</style>
+<style>
+ 
+</style>
+<link rel="stylesheet" type="text/css"   href="styles/styles.css">
+
+</head>
+<body bgcolor="FFFFCC">
+<h1>Hyderabad Tourism</h1>
+<body bgcolor="FFFFCC" topmargin="0">
+<table width="5770" border="0" align="center" cellpadding="0" cellspacing="0">
+  
+                <p align="justify">
+              The city of smiles, of lights, of a thousand faces, endearingly called the Pearl City, Hyderabad offers a variety of tourist attractions ranging from Heritage monuments, Lakes and Parks, Gardens and Resorts, Museums to delectable cuisine and a delightful shopping experience. To the traveller, Hyderabad offers a fascinating panorama of the past, with a richly mixed cultural and historical tradition spanning 400 colourful years. Some of the tourist attractions include...</p> </td>
+  
+  <tr>
+    <td height="761" background="images/middle_image_b_bg.jpg"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    </table></tr>
+<p>Hyderabad is a historic city noted for its many monuments, temples, masjids, and bazaars. A multitude of influences has shaped the character of the city in the last 400 years.
+
+The city is forming its role and outlook as part of the booming service industry revolution, and is trying to preserve and popularize its history.
+
+The History of this city, has deeply affected the culture, language, and cuisine of the Hyderabadi Muslim people, living here, and the areas once part of Hyderabad state.</p>
+
+<p>Please select the divine destination from the respective dropdown.</p>
+
+<div class="dropdown">
+<button id="myBtn" class="dropbtn">Divine Destinations</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="divine/birlamandir.html">Birlamandir</a>
+    <a href="divine/meccamasjid.html">Meccamasjid</a>
+    <a href="divine/sangi.html">Sangi</a>
+    <a href="divine/kesargutta.html">Kesargutta</a>
+  </div>
+</div>
+
+<p>Please select the heritage spots from the respective dropdown.</p>
+
+<div class="dropdown2">
+<button id="myBtn2" class="dropbtn">Heritage Spots</button>
+  <div id="myDropdown2" class="dropdown-content">
+    <a href="heritage/salarjung.html">Salarjung</a>
+    <a href="heritage/charminar.html">Charminar</a>
+    <a href="heritage/golconda.html">Golconda</a>
+    <a href="heritage/lumbini.html">Lumbini</a>
+  </div>
+</div>
+
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  Sex:<br>
+  <input type="text" name="Sex"><br>
+  Age:<br>
+  <input type="text" name="Age"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+document.getElementById("myBtn2").onclick = function() {myFunction2()};
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+    var i;
+    var j;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+
+    for (j = 0; j < dropdowns.length; j++) {
+      var openDropdown = dropdowns2[j];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+}
+</script>
+
+
+
+</body>
+</html>
